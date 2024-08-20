@@ -1,0 +1,32 @@
+.changing-text {
+    display: inline-block;
+    overflow: hidden;
+
+    .text {
+        opacity: 1;
+        transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+        background: linear-gradient(to top, #23399b, #3843c4, #447cf4);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+
+        &.slide-up {
+            transform: translateY(-50%);
+            opacity: 0;
+        }
+
+        &.fade-in-up {
+            animation: fadeInUp 0.5s ease-out;
+        }
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

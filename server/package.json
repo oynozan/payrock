@@ -1,0 +1,31 @@
+{
+  "name": "payrock-server",
+  "version": "1.0.0",
+  "main": "dist/main.js",
+  "scripts": {
+    "start": "tsc && node dist/main.js",
+    "dev": "nodemon main.ts",
+    "pm2": "pm2 start dist/main.js --exp-backoff-restart-delay=100 --name payrock"
+  },
+  "author": "oynozan",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "axios": "^1.7.3",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "ethers": "^6.13.2",
+    "express": "^4.19.2",
+    "mongoose": "^8.5.2",
+    "rlp": "^3.0.0",
+    "ts-node-dev": "^2.0.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.7",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.0.2"
+  }
+}

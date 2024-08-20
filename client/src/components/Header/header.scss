@@ -1,0 +1,66 @@
+header.header-home {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 0 30px;
+    height: 90px;
+
+    h1 {
+        display: flex;
+        align-items: center;
+
+        img {
+            height: 50px;
+        }
+    }
+
+    .links {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        font-family: "Poppins";
+        font-size: 16px;
+    }
+}
+
+header.header-dashboard {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 75px;
+    min-height: 75px;
+    max-height: 75px;
+    width: 100%;
+    padding: 0 20px;
+    box-shadow: 0 1px 2px 1px #00000030;
+
+    h2 {
+        font-weight: 600;
+        font-size: 27px;
+        text-transform: capitalize;
+    }
+
+    > .network {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        span {
+            font-family: "Poppins";
+            display: inline-flex;
+            align-items: center;
+            font-size: 16px;
+            padding: 7px 20px;
+            background: var(--dark);
+            color: var(--light);
+            border-radius: 8px;
+            transition: 200ms;
+            cursor: pointer;
+    
+            &:hover {
+                background: var(--gray);
+            }
+        }
+    }
+}

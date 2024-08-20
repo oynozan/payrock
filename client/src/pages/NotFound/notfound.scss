@@ -1,0 +1,26 @@
+@import '../../styles/mixins';
+
+.not-found {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100dvh;
+    padding: 10px;
+
+    .idk {
+        font-size: 100px;
+        white-space: nowrap;
+
+        @include W(768px) {
+            font-size: 16vw;
+        }
+    }
+
+    span {
+        display: block;
+        margin-top: 20px;
+        font-size: 20px;
+        text-align: center;
+    }
+}

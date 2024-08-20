@@ -1,0 +1,41 @@
+@import '../../styles/mixins';
+
+#home {
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: calc(100dvh - (90px * 2));
+        margin-bottom: 90px;
+        padding: 20px;
+
+        h1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            text-align: center;
+            transition: all 500ms;
+            font-weight: 800;
+            font-size: 80px;
+
+            .text {
+                margin: 0 15px;
+            }
+
+            @include W(1080px) {
+                font-size: 12vw;
+            }
+        }
+    }
+
+    .shadow {
+        position: fixed;
+        z-index: -1;
+        top: 0;
+        width: 100%;
+        height: 400px;
+        background: linear-gradient(to bottom, rgba(0, 55, 128, 0.23), transparent);
+        background-repeat: no-repeat;
+    }
+}

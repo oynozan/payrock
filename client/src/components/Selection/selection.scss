@@ -1,0 +1,118 @@
+.selection {
+    position: absolute;
+    display: block;
+    z-index: 10;
+    padding: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+    min-width: 250px;
+    width: 250px;
+    overflow-x: hidden;
+    background-color: #fff;
+
+    &.left {
+        right: 0;
+    }
+    &.right {
+        left: 0;
+    }
+    &.visible {
+        display: block;
+    }
+
+    .top {
+        position: relative;
+        display: flex;
+        padding: 10px;
+
+        input {
+            font-family: "Poppins";
+            background-color: rgb(238, 238, 238);
+            outline: none;
+            width: 100%;
+            border-radius: 20px;
+            padding: 5px 30px 5px 10px;
+        }
+
+        .icon {
+            position: absolute;
+            right: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+            margin-top: 2px;
+        }
+    }
+
+    .body {
+        max-height: 300px;
+        overflow-y: auto;
+
+        span#empty {
+            display: block;
+            margin: 0 auto;
+            width: fit-content;
+            color: gray;
+            font-size: 14px;
+        }
+
+        .item {
+            font-weight: 500;
+            padding: 10px;
+            color: var(--dark);
+            cursor: pointer;
+
+            &:hover {
+                background-color: rgb(238, 238, 238);
+            }
+        }
+    }
+}
+
+.selection-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 250px;
+
+    > span {
+        margin-top: 20px;
+    }
+
+    button {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: fit-content;
+        font-size: 16px;
+        padding: 8px 45px 8px 20px;
+        border: 1px solid #f1f1f1;
+        box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        background: transparent;
+
+        > img {
+            height: 23px;
+            width: 23px;
+            border-radius: 50%;
+        }
+
+        svg {
+            margin-right: 10px;
+            font-size: 20px;
+            color: var(--second);
+        }
+
+        .down-arrow {
+            position: absolute;
+            color: #c6c6c6;
+            right: 5px;
+            width: 20px;
+        }
+    }
+
+    > div {
+        position: relative;
+    }
+}

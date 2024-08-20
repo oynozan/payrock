@@ -1,0 +1,53 @@
+.sidebar {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    min-width: 300px;
+    max-width: 300px;
+    height: 100dvh;
+    padding-top: 5px;
+    box-shadow: 1px 0px 2px 1px #00000030;
+    background: var(--light);
+
+    > img {
+        display: block;
+        margin: auto;
+        width: 65px;
+        height: 65px;
+    }
+
+    .links {
+        font-family: "Poppins";
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        margin-top: 5px;
+    }
+
+    a, button {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        justify-content: flex-start;
+        width: 100%;
+        font-size: 17px;
+        font-weight: 500;
+        padding: 20px;
+        color: var(--gray);
+
+        &:hover {
+            background: rgba(0,0,0,0.05);
+        }
+
+        &.active {
+            border-right: 6px solid var(--main);
+            background: rgba(0,0,0,0.05);
+
+            &:hover {
+                background: rgba(0,0,0,0.1);
+            }
+        }
+    }
+}

@@ -1,0 +1,63 @@
+#wallets {
+    .error {
+        font-family: "Poppins";
+        color: var(--gray);
+        text-align: center;
+        margin-top: 60px;
+        padding: 10px;
+    }
+
+    .top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        border-bottom: 1px solid var(--v-gray);
+    }
+
+    .list {
+        padding: 20px;
+
+        h5 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+
+        .wallet {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 20px 15px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            transition: 200ms;
+            border: 1px solid var(--v-gray);
+
+            &:hover {
+                background: rgba(0, 0, 0, .02);
+            }
+
+            p {
+                font-family: "Poppins";
+                font-size: 20px;
+                font-weight: 500;
+                color: var(--main);
+            }
+
+            .details {
+                span {
+                    font-size: 15px;
+                    font-weight: 300;
+                    color: var(--l-gray);
+
+                    b {
+                        font-size: 16px;
+                        font-weight: 500;
+                        color: var(--gray);
+                    }
+                }
+            }
+        }
+    }
+}

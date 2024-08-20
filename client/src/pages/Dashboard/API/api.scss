@@ -1,0 +1,29 @@
+#api {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+
+    h5 {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    p {
+        color: var(--gray);
+    }
+
+    input {
+        width: 645px;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .docs {
+        margin-top: 50px;
+
+        a {
+            color: var(--main);
+        }
+    }
+}

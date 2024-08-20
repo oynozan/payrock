@@ -1,0 +1,146 @@
+@import "fonts";
+@import "mixins";
+
+:root {
+    --light: #fdfdfd;
+    --main: rgba(0, 55, 128);
+    --second: rgba(0, 55, 128);
+    --second-10: rgba(110, 56, 247, 0.1);
+
+    --dark: rgb(20, 19, 24);
+    --gray: rgb(50, 48, 54);
+    --gray2:rgb(39, 37, 42);
+    --l-gray: rgb(135, 135, 140);
+    --v-gray: rgba(225, 225, 228, 0.783);
+
+    --green: rgb(197, 255, 74);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--light);
+    overflow: hidden;
+    font-family: "Inter";
+    color: var(--dark);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+
+    &:not(p) {
+        font-weight: 800;
+    }
+
+    span {
+        color: var(--second);
+        font-weight: 500;
+    }
+}
+
+a,
+button {
+    color: var(--dark);
+    transition: 200ms;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+
+    &:hover {
+        color: var(--second);
+    }
+}
+
+b { font-weight: 600; }
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+input,
+textarea,
+button {
+    font-family: "Poppins";
+    background: transparent;
+    border: none;
+    outline: none;
+    transition: 200ms;
+}
+
+input {
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.3);
+    padding: 7px 20px;
+    border-radius: 20px;
+}
+
+main {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+
+    img {
+        -webkit-user-drag: none;
+        -khtml-user-drag: none;
+        -moz-user-drag: none;
+        -o-user-drag: none;
+    }
+}
+
+button, a {
+    &.dark {
+        font-family: "Poppins";
+        display: inline-flex;
+        align-items: center;
+        font-size: 16px;
+        padding: 7px 20px;
+        background: var(--dark);
+        color: var(--light);
+        border-radius: 8px;
+
+        &:hover {
+            background: var(--gray);
+        }
+
+        &:disabled {
+            background: var(--l-gray);
+            cursor: default;
+        }
+    }
+}
+
+::selection {
+    background: rgba(0, 55, 128, 0.2);
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+::-webkit-scrollbar-track {
+    background: var(--light);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--second);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--main);
+}

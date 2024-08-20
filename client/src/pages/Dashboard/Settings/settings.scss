@@ -1,0 +1,35 @@
+#settings {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 20px;
+
+    > div {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        input {
+            width: 600px;
+        }
+
+        h5 {
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+        .actions {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .selection-container {
+            width: fit-content;
+        }
+    }
+}
