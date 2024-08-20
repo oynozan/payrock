@@ -12,7 +12,7 @@ export default function HeaderHome() {
             </h1>
             <div className="links">
                 <Link to="/">Home</Link>
-                <a href="docs.payrock.me" target="_blank">Docs</a>
+                <a href="https://docs.payrock.me" target="_blank">Docs</a>
             </div>
             <ConnectButton />
         </header>

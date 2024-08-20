@@ -30,7 +30,7 @@ export async function F({
         if (body) options["body"] = JSON.stringify(body);
         if (credentials) options["credentials"] = "include";
 
-        fetch(process.env.REACT_APP_API + "/api" + endpoint, options)
+        fetch(process.env.REACT_APP_API + endpoint, options)
             .then(async res => {
                 if (!res.ok) return reject(await res.json());
                 return await res.json();

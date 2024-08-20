@@ -12,7 +12,7 @@ export default function API() {
             <p>In your API requests, you must set a <i>access-token</i> header. Here is your access token:</p>
             <input value={user.accessToken} />
 
-            <p className='docs'>Read <a href="docs.payrock.me" target="_blank">API Docs</a> to learn how to integrate Payrock into your project.</p>
+            <p className='docs'>Read <a href="https://docs.payrock.me" target="_blank">API Docs</a> to learn how to integrate Payrock into your project.</p>
         </div>
     )
 }
